@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,7 @@ public class Player : MonoBehaviour
 {
     public PlayerStats player;
     public Animator anim;
-   public float speed;
+    public float speed;
 
     Rigidbody2D rb2D;
     Vector2 movement = Vector2.zero;
@@ -20,7 +21,7 @@ public class Player : MonoBehaviour
     {
       boxCollider = GetComponent<BoxCollider2D>();
       rb2D = GetComponent<Rigidbody2D>();
-        player = GetComponent<PlayerStats>();
+      player = GetComponent<PlayerStats>();
     }
 
     private void FixedUpdate()
